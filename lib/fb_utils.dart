@@ -8,7 +8,7 @@ class FbUtils {
 
   ///Method to get MD5 String
   ///- [filePath] : path of local file
-  static Future<String> getMD5WithPath(String filePath) async {
+  static Future<String?> getMD5WithPath(String filePath) async {
     var map = {
       'file_path': filePath,
     };
@@ -18,7 +18,7 @@ class FbUtils {
 
   ///Method to get MD5 String
   ///- [target] : to md5 target
-  static Future<String> getMD5WithSring(String target) async {
+  static Future<String?> getMD5WithSring(String target) async {
     var map = {
       'target': target,
     };
